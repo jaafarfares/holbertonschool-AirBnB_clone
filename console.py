@@ -2,13 +2,6 @@
 """ this Module contains the entry point of the command interpreter """
 
 import cmd
-from models.base_model import BaseModel
-from models.user import User
-from models.city import City
-from models.state import State
-from models.amenity import Amenity
-from models.place import Place
-from models.review import Review
 from datetime import datetime
 
 
@@ -25,13 +18,9 @@ class HBNBCommand(cmd.Cmd):
         """ to quit the promt"""
         return True
 
-    def empyy_line(self):
+    def empyy_line(self, args):
         """ if no argument given """
         pass
-
-    def do_help(self, args):
-        """ help """
-        cmd.Cmd.do_help(self, args)
 
 
 if __name__ == '__main__':
