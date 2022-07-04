@@ -18,7 +18,7 @@ class HBNBCommand(cmd.Cmd):
         """ to quit the promt"""
         return True
 
-    def empyy_line(self, args):
+    def emptyline(self):
         """ if no argument given """
         pass
 
